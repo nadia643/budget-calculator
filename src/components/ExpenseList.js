@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Item from './ExpenseItem';
 
-export const ExpenseList = () => {
+const ExpenseList = ({expenses}) => {
     return (
-        <div>
-            hello from expense list
-        </div>
+        <>
+            <ul className="list">
+                {expenses.map((expense) => {
+                    return <Item key={expense.id} expense={expense} />
+                })}
+            </ul>
+            <Item />
+        </>
     )
 }
+
+export default ExpenseList;

@@ -7,3 +7,5 @@ export const ExpenseItem = () => {
         </div>
     )
 }
+
+export default ExpenseItem;
