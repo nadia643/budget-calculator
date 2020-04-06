@@ -30,7 +30,7 @@ const ExpenseForm = ({ charge, amount, handleCharge, handleAmount, handleSubmit,
                     />
                 </div>
             </div>
-            <button type="submit" className="btn">
+            <button type="submit" className="btn btn-grey btn-animated">
                 {edit? 'edit' : 'submit'}
                 <MdSend className="btn-icon" />
             </button>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './css/styles.css';
 import ExpenseList from './components/ExpenseList'
 import ExpenseForm from './components/ExpenseForm'
 import Alert from './components/Alert';
@@ -130,16 +130,40 @@ function App() {
     clearItems={clearItems}
     />
     </main>
-    <h1>
-      Total spending: <span className="total">
-        {/* 0 is the initial value. Acc is the total and curr is the current item in our iteration*/}
-        {/* this lot of code basically adds all of the amounts from the array  */}
-        $ 
+
+
+    {/* this is the total if i didn't have it on a card */}
+    {/* <h1>
+      Total spending: <span className="total"> */}
+         {/* 0 is the initial value. Acc is the total and curr is the current item in our iteration
+         this lot of code basically adds all of the amounts from the array  */}
+        {/* $ 
         {expenses.reduce((acc, curr) => {
           return (acc += parseInt(curr.amount));
         }, 0)}
       </span>
-    </h1>
+    </h1> */}
+
+<div class="card">
+  <div class="card__side card__side--front">
+    <div class="card__details">
+      <h1>Hover for total spending: </h1>
+    </div>
+  </div>
+  <div class="card__side card__side--back card__side--back-1">
+    <div class="card__cta">
+      <div class="card__price-box">
+        <h1 class="card__price-value">
+          $ 
+          {expenses.reduce((acc, curr) => {
+            return (acc += parseInt(curr.amount));
+          }, 0)}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+                    
     </>
   );
 }
