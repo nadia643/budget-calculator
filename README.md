@@ -2,6 +2,12 @@ This project was created with Udemy Course, React Tutorial and Projects Course, 
 
 I have styled it with SASS.
 
+With this calculator, you can add the value of the expense, and what it is for. Each entry can be edited, deleted, or all entries can be cleared at once.
+
+Data remains when the page is refreshed.
+
+The total value of your input is shown when you hover the "hover for total spending button."
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
