@@ -18,11 +18,18 @@ $gutter-horizontal: 6rem;
   margin: 0;
   box-sizing: border-box;
 }
+
+
 body {
-  background-image: linear-gradient(to right, $gradient-blue-dark, $gradient-blue-light);
+  // background-image: url('/background-img');
+  background-size: cover;
+  background-position: top;
   color: $mainBlack;
   font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to right bottom, $gradient-blue-dark, $gradient-blue-light),
+  
 }
+
 h1 {
   text-align: center;
   text-transform: capitalize;
@@ -34,6 +41,13 @@ h1 {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow:.5rem 1rem 2rem rgba($mainBlack, .2)
 }
+}
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  color: $darkGrey;
+  letter-spacing: 5px;
 }
 .App {
   margin: 0 auto;
@@ -116,10 +130,6 @@ label {
   transition: all .8s;
 }
 
-&-animated {
-  animation: moveInBottom .5s ease-out .5s;
-  animation-fill-mode: backwards;
-}
 }
 
 
@@ -257,16 +267,24 @@ label {
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem $mainBlack; 
+}
+
     .card__side--front {
-      background-color: transparent; }
+      background-color: transparent;
+}
+
     .card__side--back {
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg); 
+}
      
   .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
+    transform: rotateY(-180deg); 
+}
+
   .card:hover .card__side--back {
-    transform: rotateY(0); }
+    transform: rotateY(0); 
+}
 
   .card__cta {
     position: absolute;
@@ -274,8 +292,10 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    text-align: center; }
+    text-align: center; 
+}
 
   .card__price-value {
     font-size: 4rem;
-    font-weight: 100; }
+    font-weight: 100; 
+}

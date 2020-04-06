@@ -7,7 +7,7 @@ const { id, charge, amount } = expense
         <li className="item">
             <div className="info">
                 <span className="expense">{charge}</span>
-                <span className="amount">${amount}</span>
+                <span className="amount">£{amount}</span>
             </div>
             <div>
                 <button 

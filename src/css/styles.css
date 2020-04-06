@@ -3,9 +3,11 @@
   box-sizing: border-box; }
 
 body {
-  background-image: linear-gradient(to right, #2474bc, #afc7d2);
+  background-size: cover;
+  background-position: top;
   color: #222;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to right bottom, #2474bc, #afc7d2); }
 
 h1 {
   text-align: center;
@@ -16,6 +18,13 @@ h1 {
   h1:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(34, 34, 34, 0.2); }
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  color: #424242;
+  letter-spacing: 5px; }
 
 .App {
   margin: 0 auto;
@@ -85,9 +94,6 @@ label {
     left: 0;
     z-index: -1;
     transition: all .8s; }
-  .btn-animated {
-    animation: moveInBottom .5s ease-out .5s;
-    animation-fill-mode: backwards; }
 
 @keyframes moveInBottom {
   0% {
@@ -212,7 +218,7 @@ label {
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.5rem 4rem #222; }
 
 .card__side--front {
   background-color: transparent; }

@@ -5,6 +5,7 @@ import ExpenseForm from './components/ExpenseForm'
 import Alert from './components/Alert';
 import uuid from 'uuid/v4';
 
+
 // const initialExpenses = [
 //   { id: uuid(), charge: "rent", amount: 1600 },
 //   { id: uuid(), charge: "car payment", amount: 400 },
@@ -147,18 +148,18 @@ function App() {
 <div class="card">
   <div class="card__side card__side--front">
     <div class="card__details">
-      <h1>Hover for total spending: </h1>
+      <h2>Hover for total spending: </h2>
     </div>
   </div>
   <div class="card__side card__side--back card__side--back-1">
     <div class="card__cta">
       <div class="card__price-box">
-        <h1 class="card__price-value">
-          $ 
+        <h2 class="card__price-value">
+          £ 
           {expenses.reduce((acc, curr) => {
             return (acc += parseInt(curr.amount));
           }, 0)}
-        </h1>
+        </h2>
       </div>
     </div>
   </div>

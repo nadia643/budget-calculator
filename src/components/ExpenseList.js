@@ -17,7 +17,7 @@ const ExpenseList = ({expenses, handleEdit, handleDelete, clearItems }) => {
             </ul>
             {/* button won't be displayed if don't have anything in our list */}
             {expenses.length > 0 && (
-            <button className="btn btn-grey btn-animated" onClick={clearItems}>
+            <button className="btn btn-grey" onClick={clearItems}>
                 Clear Expenses
                 <MdDelete className="btn-icon" />
             </button>
