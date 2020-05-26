@@ -1,4 +1,4 @@
-This project was created with Udemy Course, React Tutorial and Projects Course, and is a budget calculator.
+This project is a budget calculator.
 
 I have styled it with SASS.
 
